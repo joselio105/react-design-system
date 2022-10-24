@@ -25,6 +25,6 @@ jobs:
         run: npm run build-storybook
 
       - name: Deploy Storybook
-        run: npm run deploy-storybook -- --ci --remote=upstream --existing-output-dir=storybookk-static
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybookk-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
